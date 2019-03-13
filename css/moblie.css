@@ -9,7 +9,9 @@ h1,h2,h3,h4,h5,h6{
 .bold{
     font-family: 'assistantregular';
 }
-
+.img-reponsive{
+    max-width: 100%;
+}
 
 header {
     width: 100%;
@@ -37,6 +39,8 @@ header {
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
+   flex-flow: row wrap;
+    height: 100%;
 }
 
 nav {
@@ -49,6 +53,7 @@ nav {
     flex-basis: 100%;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
 }
 
 #logoNav {
@@ -77,4 +82,30 @@ nav {
     justify-content: center;
     align-items: center;
     color: #3B3B3B;
+}
+
+#contedor-header {
+    flex: 0 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 50vh;
+    align-items: center;
+
+}
+
+#relojHeader {
+    flex: 0 1 calc(50% - 1rem);
+}
+
+#txtReloj {
+    flex: 0 1 calc(50% - 1rem);
+    align-self: flex-start;
+}
+.txtReloj h2{
+    font-size: 3.5rem;
+}
+
+.img-responsive {
+    max-width: 100%;
 }
